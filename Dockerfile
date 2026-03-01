@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM gradle:8.8-jdk25 AS build
+FROM eclipse-temurin:25-jdk AS build
 WORKDIR /workspace
 COPY build.gradle settings.gradle gradlew gradlew.bat /workspace/
 COPY gradle /workspace/gradle
